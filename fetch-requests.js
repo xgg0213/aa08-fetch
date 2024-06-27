@@ -10,12 +10,7 @@ const url = "http://localhost:8000/products"
 
 const headers = {"Content-Type": "application/x-www-form-urlencoded"};
 // Use the URLSearchParams API to format your body as shown below
-const body = new URLSearchParams({
-    name: "Caribbean Delight Coffee",
-    description: "Made by Manatee Coffee",
-    price: "11.99",
-    categories: "grocery"
-});
+const body = "name=Caribbean+Delight+Coffee&description=Made+by+Manatee+Coffee&price=11%2E99&categories=grocery";
 
 const options = {
     method: "POST", 
@@ -35,3 +30,21 @@ fetch(url, options)
 /* ============================== Phase 3 ============================== */
 
 // Your code here 
+// const url = "http://localhost:8000/products"
+
+// const headers = {"Content-Type": "application/x-www-form-urlencoded"};
+// // Use the URLSearchParams API to format your body as shown below
+// const body = new URLSearchParams({
+//     name: "Caribbean Delight Coffee",
+//     description: "Made by Manatee Coffee",
+//     price: "11.99",
+//     categories: "grocery"
+// });
+
+// const options = {
+//     method: "POST", 
+//     headers: headers,
+//     body: body
+// };
+
+// fetch(url, options)
